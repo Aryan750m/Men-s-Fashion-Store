@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Fashion Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Men's Fashion</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a id="cart-icon" onclick="toggleCartPopup()">
+            🛒 Cart <span id="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-banner">
+    <div class="hero-content">
+      <h1>Stylish & Affordable</h1>
+      <p>Upgrade your wardrobe with the latest trends in men's clothing.</p>
+      <button onclick="location.href='#shop'">Explore Collection</button>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="shop">
+      <h2>Our Products</h2>
+       <section id="shop" class="shop">
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="tshirt.jpg" alt="tshirt">
+        <h3>Stylish tshirt</h3>
+        <p>₹199</p>
+     <div class="quantity-selector">
+    <button onclick="decreaseQty('tshirt')">-</button>
+    <span id="qty-tshirt">1</span>
+    <button onclick="increaseQty('tshirt')">+</button>
+     </div>
+     <button onclick="addToCart('Stylish T-Shirt', 199, 'tshirt')">Add to Cart</button>
+     </div>
+
+
+
+      <div class="product-card">
+        <img src="jacket.jpg" alt="Jacket">
+        <h3>Cool Jacket</h3>
+        <p>₹999</p>
+        <div class="quantity-selector">
+    <button onclick="decreaseQty('jacket')">-</button>
+    <span id="qty-jacket">1</span>
+    <button onclick="increaseQty('jacket')">+</button>
+  </div>
+  <button onclick="addToCart('Cool jacket', 999, 'jacket')">Add to Cart</button>
+</div>
+
+
+
+
+ <div class="product-card">
+        <img src="Blazers.jpg" alt="Blazers">
+        <h3>Elegant Blazers</h3>
+        <p>₹5999</p>
+       <div class="quantity-selector">
+    <button onclick="decreaseQty('Blazers')">-</button>
+    <span id="qty-Blazers">1</span>
+    <button onclick="increaseQty('Blazers')">+</button>
+  </div>
+  <button onclick="addToCart('Elegant Blazers', 5999, 'Blazers')">Add to Cart</button>
+</div>
+ </div>
+    </div>
+  </section>
+
+
+<section id="shop" class="shop">
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="Hoodies.jpg" alt="Hoodies">
+        <h3>Stylish Hoodies</h3>
+        <p>₹499</p>
+        <div class="quantity-selector">
+    <button onclick="decreaseQty('Hoodies')">-</button>
+    <span id="qty-Hoodies">1</span>
+    <button onclick="increaseQty('Hoodies')">+</button>
+  </div>
+  <button onclick="addToCart('Stylish Hoodies', 499, 'Hoodies')">Add to Cart</button>
+</div>
+
+
+      <div class="product-card">
+        <img src="zip hoodie.jpg" alt="zip hoodie">
+        <h3>zip hoodie</h3>
+        <p>₹399</p>
+<div class="quantity-selector">
+    <button onclick="decreaseQty('zip hoodie')">-</button>
+    <span id="qty-zip hoodie">1</span>
+    <button onclick="increaseQty('zip hoodie')">+</button>
+  </div>
+  <button onclick="addToCart('zip hoodie', 399, 'zip hoodie')">Add to Cart</button>
+</div>
+
+
+
+  <div class="product-card">
+        <img src="Jeans.jpg" alt="Jeans">
+        <h3>Stylish Jeans</h3>
+        <p>₹599</p>
+        <div class="quantity-selector">
+    <button onclick="decreaseQty('Jeans')">-</button>
+    <span id="qty-Jeans">1</span>
+    <button onclick="increaseQty('Jeans')">+</button>
+  </div>
+  <button onclick="addToCart('Stylish Jeans', 599, 'Jeans')">Add to Cart</button>
+</div>
+    
+     
+
+
+<section id="shop" class="shop">
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="Polos.jpg" alt="Polos">
+        <h3>Stylish Polos</h3>
+        <p>₹299</p>
+<div class="quantity-selector">
+    <button onclick="decreaseQty('Polos')">-</button>
+    <span id="qty-Polos">1</span>
+    <button onclick="increaseQty('Polos')">+</button>
+  </div>
+  <button onclick="addToCart('Stylish Polos', 299, 'Polos')">Add to Cart</button>
+</div>
+
+       <div class="product-card">
+        <img src="Sneaker.jpg" alt="Sneaker">
+        <h3>Sneaker</h3>
+        <p>₹799</p>
+<div class="quantity-selector">
+    <button onclick="decreaseQty('Sneaker')">-</button>
+    <span id="qty-Sneaker">1</span>
+    <button onclick="increaseQty('Sneaker')">+</button>
+  </div>
+  <button onclick="addToCart('Sneaker', 799, 'Sneaker')">Add to Cart</button>
+</div>
+
+
+
+      <div class="product-card">
+        <img src="watch.jpg" alt="watch">
+        <h3>Watch</h3>
+        <p>₹1999</p>
+        <div class="quantity-selector">
+    <button onclick="decreaseQty('watch')">-</button>
+    <span id="qty-watch">1</span>
+    <button onclick="increaseQty('watch')">+</button>
+  </div>
+  <button onclick="addToCart('watch', 1999, 'watch')">Add to Cart</button>
+</div>
+</div>
+ </div>
+  </section>
+
+
+
+
+<div class="product-grid">
+      <div class="product-card">
+        <img src="shirt.jpg" alt="tshirt">
+        <h3>Stylish tshirt</h3>
+        <p>₹399</p>
+     <div class="quantity-selector">
+    <button onclick="decreaseQty('shirt')">-</button>
+    <span id="qty-shirt">1</span>
+    <button onclick="increaseQty('shirt')">+</button>
+     </div>
+     <button onclick="addToCart('Stylish Shirt', 399, 'shirt')">Add to Cart</button>
+     </div>
+    
+<div class="product-card">
+        <img src="Trousers.jpg" alt="Jacket">
+        <h3>Trousers</h3>
+        <p>₹399</p>
+        <div class="quantity-selector">
+    <button onclick="decreaseQty('Trousers')">-</button>
+    <span id="qty-Trousers">1</span>
+    <button onclick="increaseQty('Trousers')">+</button>
+  </div>
+  <button onclick="addToCart('Trousers', 399, 'Trousers')">Add to Cart</button>
+</div>
+
+
+            <div class="product-card">
+        <img src="Belt.jpg" alt="Belt">
+        <h3>Stylish Belt</h3>
+        <p>₹119</p>
+<div class="quantity-selector">
+    <button onclick="decreaseQty('Belt')">-</button>
+    <span id="qty-Belt">1</span>
+    <button onclick="increaseQty('Belt')">+</button>
+  </div>
+  <button onclick="addToCart('Stylish Belt', 119, 'Belt')">Add to Cart</button>
+</div>       
+      </div>
+    </div>
+  </section>
+
+
+
+<section id="shop" class="shop">
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="Hat.jpg" alt="Hat">
+        <h3>Stylish Hat</h3>
+        <p>₹159</p>
+<div class="quantity-selector">
+    <button onclick="decreaseQty('Hat')">-</button>
+    <span id="qty-Hat">1</span>
+    <button onclick="increaseQty('Hat')">+</button>
+  </div>
+  <button onclick="addToCart('Stylish Hat', 159, 'Hat')">Add to Cart</button>
+</div>
+
+             <div class="product-card">
+        <img src="Bag.jpg" alt="Bag">
+        <h3>Stylish Bag</h3>
+        <p>$1599</p>
+       <div class="quantity-selector">
+    <button onclick="decreaseQty('Bag')">-</button>
+    <span id="qty-Bag">1</span>
+    <button onclick="increaseQty('Bag')">+</button>
+  </div>
+  <button onclick="addToCart('Stylish Bag', 1599, 'Bag')">Add to Cart</button>
+</div>
+      <div class="product-card">
+        <img src="shorts.jpg" alt="shorts">
+        <h3>Stylish shorts</h3>
+        <p>₹359</p>
+        <div class="quantity-selector">
+    <button onclick="decreaseQty('shorts')">-</button>
+    <span id="qty-shorts">1</span>
+    <button onclick="increaseQty('shorts')">+</button>
+  </div>
+  <button onclick="addToCart('Stylish shorts', 359, 'shorts')">Add to Cart</button>
+</div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Cart Popup -->
+  <div id="cart-popup" class="cart-popup hidden">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: ₹<span id="total-price">0</span></h3>
+    <button onclick="showPaymentModal()">Proceed to Checkout</button>
+    <button onclick="toggleCartPopup()">Close</button>
+  </div>
+
+  <!-- Payment Modal -->
+  <div id="payment-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Select Payment Method</h2>
+      <form id="payment-form">
+        <div>
+          <input type="radio" id="upi" name="payment-method" value="UPI">
+          <label for="upi">UPI</label>
+        </div>
+        <div>
+          <input type="radio" id="netbanking" name="payment-method" value="Net Banking">
+          <label for="netbanking">Net Banking</label>
+        </div>
+        <div>
+          <input type="radio" id="gpay" name="payment-method" value="Google Pay">
+          <label for="gpay">Google Pay</label>
+        </div>
+        <div>
+          <input type="radio" id="debitcard" name="payment-method" value="Debit Card">
+          <label for="debitcard">Debit Card</label>
+        </div>
+        <div>
+          <input type="radio" id="creditcard" name="payment-method" value="Credit Card">
+          <label for="creditcard">Credit Card</label>
+        </div>
+        <button type="button" onclick="confirmPayment()">Pay Now</button>
+      </form>
+      <button onclick="closePaymentModal()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Success Message -->
+  <div id="success-message" class="modal hidden">
+    <div class="modal-content">
+      <h2>Payment Successful!</h2>
+      <p>Thank you for shopping with us!</p>
+      <button onclick="closeSuccessMessage()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+<!-- About Us Section -->
+<section id="about" class="about-section">
+  <h2>About Us</h2>
+  <p>Welcome to Men's Fashion Store – your one-stop destination for stylish and affordable men's clothing.</p>
+  <p>Our mission is to provide fashion that blends comfort, durability, and affordability.</p>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>Have questions? Get in touch with us!</p>
+  
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="footer-section">
+      <h3>Subscribe to Our Newsletter</h3>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="whatsapp.png" alt="whatsapp"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 Men's Clothing Store. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
